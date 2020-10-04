@@ -11,24 +11,26 @@
     <header>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Ejercicio4 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href=index.php>Ejercicio1 <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href=ejercicio2.php>Ejercicio2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=ejercicio3.php>Ejercicio3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href=ejercicio4.php>Ejercicio4</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
+                    
                 </div>
         </nav>
 
@@ -83,16 +85,16 @@
                                                            
                             <div class="col-3 ">
                                 
-                                <input type="text" class="form-control" placeholder="Nombre" name="nombre1">
+                                <input type="text" class="form-control" placeholder="Nombre" name="nombre2">
                             </div>
 
                             <div class="col-3 ">
-                                <input type="text" class="form-control" placeholder="Teléfono" name="telefono1">
+                                <input type="text" class="form-control" placeholder="Teléfono" name="telefono2">
                             </div>
 
                             
                             <div class="col-3">
-                                <input type="text" class="form-control" placeholder="Dirección" name="direccion1">
+                                <input type="text" class="form-control" placeholder="Dirección" name="direccion2">
                             </div>
 
                             
@@ -111,16 +113,16 @@
                                                            
                             <div class="col-3 ">
                                 
-                                <input type="text" class="form-control" placeholder="Nombre" name="nombre1">
+                                <input type="text" class="form-control" placeholder="Nombre" name="nombre3">
                             </div>
 
                             <div class="col-3 ">
-                                <input type="text" class="form-control" placeholder="Teléfono" name="telefono1">
+                                <input type="text" class="form-control" placeholder="Teléfono" name="telefono3">
                             </div>
 
                             
                             <div class="col-3">
-                                <input type="text" class="form-control" placeholder="Dirección" name="direccion1">
+                                <input type="text" class="form-control" placeholder="Dirección" name="direccion3">
                             </div>
 
                             
@@ -139,16 +141,16 @@
                                                            
                             <div class="col-3 ">
                                 
-                                <input type="text" class="form-control" placeholder="Nombre" name="nombre1">
+                                <input type="text" class="form-control" placeholder="Nombre" name="nombre4">
                             </div>
 
                             <div class="col-3 ">
-                                <input type="text" class="form-control" placeholder="Teléfono" name="telefono1">
+                                <input type="text" class="form-control" placeholder="Teléfono" name="telefono4">
                             </div>
 
                             
                             <div class="col-3">
-                                <input type="text" class="form-control" placeholder="Dirección" name="direccion1">
+                                <input type="text" class="form-control" placeholder="Dirección" name="direccion4">
                             </div>
 
                             
@@ -167,16 +169,16 @@
                                                            
                             <div class="col-3 ">
                                 
-                                <input type="text" class="form-control" placeholder="Nombre" name="nombre1">
+                                <input type="text" class="form-control" placeholder="Nombre" name="nombre5">
                             </div>
 
                             <div class="col-3 ">
-                                <input type="text" class="form-control" placeholder="Teléfono" name="telefono1">
+                                <input type="text" class="form-control" placeholder="Teléfono" name="telefono5">
                             </div>
 
                             
                             <div class="col-3">
-                                <input type="text" class="form-control" placeholder="Dirección" name="direccion1">
+                                <input type="text" class="form-control" placeholder="Dirección" name="direccion5">
                             </div>
 
                             
@@ -200,35 +202,59 @@
 
                     
                     <?php if (isset($_POST["botonCalcular"])):
-                         $sumatoriaSalarios=$_POST["salario1"]+$_POST["salario1"];
-                         define('sueldo_base',800000);
-                        
+                    $sumatoriaSalarios=0;
+                    define("sucursalB",40000000);
+                    define("sucursalC",32000000);
+                    
+                    echo("Usuarios de sucursal A");
+                    echo("<br>");
+                    $usuario1=array($_POST["nombre1"],$_POST["telefono1"],$_POST["direccion1"],$_POST["salario1"]);
+                    print_r($usuario1);
+                    echo("<br>");
+
+                    $usuario2=array($_POST["nombre2"],$_POST["telefono2"],$_POST["direccion2"],$_POST["salario2"]);
+                    print_r($usuario2);
+                    echo("<br>");
+
+                    $usuario3=array($_POST["nombre3"],$_POST["telefono3"],$_POST["direccion3"],$_POST["salario3"]);
+                    print_r($usuario3);
+                    echo("<br>");
+
+
+                    $usuario4=array($_POST["nombre4"],$_POST["telefono4"],$_POST["direccion4"],$_POST["salario4"]);
+                    print_r($usuario4);
+                    echo("<br>");
+
+                    $usuario5=array($_POST["nombre5"],$_POST["telefono5"],$_POST["direccion5"],$_POST["salario5"]);
+                    print_r($usuario5);
+                    echo("<br>");
+
+                                        
+                     $Salarios= array ('sueldo1'=>$_POST["salario1"],'sueldo2'=>$_POST["salario2"],'sueldo3'=>$_POST["salario3"],
+                                       'sueldo4'=>$_POST["salario4"],'sueldo5'=>$_POST["salario5"]);   
+                     
+                                            
+                      foreach ($Salarios as $clave=>$valor )
+                      {
+                        $sumatoriaSalarios=$sumatoriaSalarios+$valor;
+
+                      }
+
+                      echo("La suma de todos los salarios de la sucursal A es: ".$sumatoriaSalarios);
+
+                      echo("<br>");
+
+                      if ($Salarios>sucursalB){
+                          echo("La sucursal con mayor sumatoria de salarios es la sucursal A");
+                         }
+                      else{
+                        echo("La sucursal con mayor sumatoria de salarios es la sucursal A");
+
+                      }
                          
                     ?> 
 
-                      <h4 class="mt-5">  
-                       <?php 
-                          if ($Cantidad_horas<=40)
-                        
-                           {
-                            
-                            echo("El total de su sueldo esta semana es: ".($Cantidad_horas*20000));
-                           }
-
-                          
-                           else 
-                            {
-                               $horas_extra=($Cantidad_horas-40);
-                           
-                               $Precio_horasExtra= $horas_extra*25000;
-                          
-                            
-                                $sueldo=sueldo_base+$Precio_horasExtra;
-
-                                  echo("El total de sueldo esta semana es: ".$sueldo);
-                            }
-
-                        ?> 
+                       
 
                     <?php endif ?>
                         
