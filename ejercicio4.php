@@ -71,6 +71,7 @@
                            {
                             
                             echo("El total de su sueldo esta semana es: ".($Cantidad_horas*20000));
+                           
                            }
 
                           
@@ -84,6 +85,8 @@
                                 $sueldo=sueldo_base+$Precio_horasExtra;
 
                                   echo("El total de sueldo esta semana es: ".$sueldo);
+                                  echo("<br>");
+                                  echo("La cantidad de horas extra realizadas es de: ".$horas_extra.", por un precio de: $". $Precio_horasExtra);
                             }
 
                         ?> 

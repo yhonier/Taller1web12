@@ -42,14 +42,14 @@
             <div class="row justify-content-center">
                 <div class="col-12">
                     <form class="mt-12" action="ejercicio2.php" method="POST">
-                        <h2 class="text-center mt-4" >Calcular ICM</h2>
+                        <h2 class="text-center mt-3" >Calcular ICM</h2>
                         <div class="row">
                             <div class="col-6">
-                                <h3> Por favor ingrese su peso: </h3>
+                                <h4 class=mt-4> Por favor ingrese su peso: </h4>
                                 <input type="number" class="form-control" placeholder="Peso" name="peso">
                             </div>
                             <div class="col-6">
-                                <h3> Por favor ingrese su estatura (en centimetros) </h3>
+                                <h4 class=mt-4> Por favor ingrese su estatura (en centimetros) </h4>
                                 <input type="number" class="form-control" placeholder="Estatura 2" name="estatura">
                             </div>
                                                      

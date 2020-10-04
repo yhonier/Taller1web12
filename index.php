@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>supermercado</title>
+    <title>Operaciones Matemáticas</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
@@ -41,17 +41,17 @@
        
         <div class="container border=45">
             <div class="row justify-content-center">
-                <div class="col-4">
+                <div class="col-6">
                     <form class="mt-8" action="index.php" method="POST">
                         <h2 class="text-center mt-4" >Operaciones matemáticas</h2>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-4 mt-4">
                                 <input type="number" class="form-control" placeholder="Numero 1" name="num1">
                             </div>
-                            <div class="col">
-                                <input type="number" class="form-control" placeholder="Numero 2" name="num2">
+                            <div class="col-4 mt-4">
+                                <input type="number text-center" class="form-control" placeholder="Numero 2" name="num2">
                             </div>
-                            <div class="col">
+                            <div class="col-4 mt-4">
                             <select  name="operacion">
                               <option value= 1>suma</option >
                               <option value= 2>Resta </option >
@@ -62,7 +62,11 @@
                             </div>
                             
                         </div>
-                        <button type="submit" class="btn btn-primary mt-5" name="botonEnvio">Submit</button>
+                        <div class="row">
+                           <div class="col-12 text-center">
+                             <button type="submit" class="btn btn-primary mt-5" name="botonEnvio">Calcular</button>
+                            </div> 
+                        </div>
                     </form>
 
                     
@@ -73,7 +77,7 @@
                     
                     ?> 
 
-                     <h4 class="mt-5">  
+                     <h4 class="mt-3 text-center">  
                       <?php 
                       switch ($operacion)
                         {

@@ -244,11 +244,11 @@
 
                       echo("<br>");
 
-                      if ($Salarios>sucursalB){
-                          echo("La sucursal con mayor sumatoria de salarios es la sucursal A");
+                      if ($sumatoriaSalarios>sucursalB){
+                          echo("La sucursal con mayor sumatoria de salarios es la sucursal A ");
                          }
                       else{
-                        echo("La sucursal con mayor sumatoria de salarios es la sucursal A");
+                        echo("La sucursal con mayor sumatoria de salarios es la sucursal B");
 
                       }
                          
