@@ -59,18 +59,16 @@
                                    <form class="mt-12" action="ejercicio3.php" method="POST">
                                       <div>
                                       
-                                          <?php
-
-                                              for ($i=0;$i<$cantidad;$i++):?>
-                                               <?php echo("ingresa el valor del par de zapatos:". ($i+1)); ?>
-                                              <input type="number" class="form-control" placeholder="Cantidad comprada" name="zapatos">
-                                              //<?php $zapatos=$_POST["zapatos"];
-                                                 //   $sumazapatos=$sumazapatos$zapaptos;
-
-                                              //?>
+                                          <?php for ($i=0;$i<$cantidad;$i++):?>
+                                             <h5>Ingresa el valor de los zapatos:<?php echo($i+1)?></h5>
+                                             <input type="number" class="form-control" placeholder="Cantidad comprada" name="zapatos<?php echo($i+1)?>">
+                                              
+    
                                             
                                               
                                               <?php endfor ?>
+
+                                              <button></button>
 
 
 
